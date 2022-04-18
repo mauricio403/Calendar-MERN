@@ -65,7 +65,6 @@ export const startCheking = () => {
                 name: body.name,
             }));
         } else {
-            Swal.fire('Error', body.message, 'error');
             dispatch(checkingFinish());
         }
     }
